@@ -38,6 +38,14 @@
     border: 1px black solid;
 }
 
+.line__indic{
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 13.1%;
+    width: 5%; 
+    border: 1px rgba(0, 0, 0, 0.527) solid;
+}
+
 .nav a {
     color: black;
     font-size: 15px;
@@ -64,6 +72,7 @@
     margin-left: 60%;
 }
 
+/* ARRUMAR O ESPAÇO ENTRE OS ELEMENTOS DO MENU E O X */
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -84,12 +93,16 @@
         overflow-x: hidden;
     }
 
-    .nav-list {
-        position: absolute;
-        top: 70px;
+    .line__indic{
+        display: none;
+    }
+
+   .nav-list {
+        position: fixed;
+        top: 0;
         right: 0;
         width: 80%;
-        height: 100%;
+        height: 100vh;
         background: #100E0E;
         flex-direction: column;
         align-items: center;
@@ -97,6 +110,7 @@
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         overflow-y: hidden; 
+        z-index: 999;
     }
 
     .nav-list li {
@@ -112,6 +126,7 @@
 
     .mobile-menu {
         display: block;
+      
     }
 
 }
@@ -159,11 +174,9 @@
 .title{
     margin-left: 70px;
     margin-top: 20px;
-    
 }
 
  h2{
- 
         background: linear-gradient(
             90deg,
             #231838 0%,
@@ -176,7 +189,7 @@
         );
         -webkit-background-clip: text;
         background-clip: text;
-        color: transparent; /* torna o texto transparente */
+        color: transparent; 
         max-width: 551px;
         font: 700 40px Inter, sans-serif;
   
@@ -188,6 +201,7 @@
     word-wrap: break-word;
 }
 
+/* ARRUMAR OS CARDS QUE ESTÃO FICANDO EM CIMA DO MENU*/
 .container{
   width:  80%;
   max-width: 1200px;
@@ -206,13 +220,13 @@
     box-shadow: 0 2px 5px 0 rgba(#000,.2);
     transition: all .2s;
     overflow: hidden;
-    height: 330px;
+    height: 340px;
  }   
     .card:hover{
       transform: translateY(-.5em);
       box-shadow: 0 10px 5px 0 rgba(#000,.2);
     }
-    img{
+    .card img{
       width: 100%;
       height: 150px;
       display: block;
@@ -253,16 +267,19 @@
       color: white;
     }
 
-    .convitechat{
+    .convitechat {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center; /* Centraliza o texto horizontalmente */
     }
-
-    .convitechat h4{
-    font-size: 16px;
-    font-weight:normal;
-  }
+    
+    .convitechat h4 {
+        font-size: 16px;
+        font-weight: normal;
+        word-wrap: break-word;
+        max-width: 90%; /* Limita a largura do texto para quebrar em telas menores */
+    }
 
     .assistente{
         display: flex;
@@ -271,19 +288,58 @@
     }
 
     .assistente p{
-        background: linear-gradient(
-            90deg,
-            #231838 0%,
-            #534274 13%,
-            #322846 27.5%,
-            #2e2541 43.5%,
-            #492d39 58.5%,
-            #653631 76%,
-            #9b4620 90%
-        );
+        background: linear-gradient(90deg,#231838 0%,#534274 13%,#322846 27.5%,#2e2541 43.5%,#492d39 58.5%,#653631 76%,#9b4620 90%);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent; 
-       font-size: 16px;
-       font-weight: bolder;
+        font-size: 16px;
+        font-weight: bolder;
     }
+
+   .iconcharles{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;   
+    }
+
+    #iconcharles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    /*ARRUMAR TAMANHO DO RODAPÉ QUE ESTA FICANDO CORTADO CONFORME DIMINUÍ A TELA */
+    .footer {
+        box-shadow: 0px -5px 11.2px 0px rgba(0, 0, 0, 0.25);
+        background-color: #100e0e;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.59);
+        font-weight: 600;
+        justify-content: center;
+        padding: 77px 60px;
+      }
+      .conteudo__footer {
+        display: flex;
+        margin-top: 4px;
+        width: 315px;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+      .conteudo__footer img {
+        object-fit: auto;
+        object-position: center;
+        width: 100%;
+      }
+      .integrantes__footer {
+        margin-top: 30px;
+       
+      }
+      .integrantes__footer a{
+        color: rgba(255, 255, 255, 0.514);
+        text-decoration: none;
+        font-weight: normal;
+      }
+     
