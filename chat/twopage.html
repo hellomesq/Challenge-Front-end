@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+   <header>
+   <nav class="nav">
+    <div class="user-info">
+        <img src="iconcharles.jpg" alt="Avatar do Assistente Charles" class="avatar" />
+        <div class="user-details">
+        <h2 class="user-name">Charles</h2>
+        <p class="user-role">Auto atendimento</p>
+        </div>
+        </div>
+        <a href="../servicos/servicos.html">
+            <button class="logout-button">Sair</button>
+        </a>
+   </nav> 
+   </header>
+   <section class="container">
+    <div class="message-section">
+      <img src="../chat/iconcharles.jpg" alt="Avatar Charles" />
+      <p class="message">Olá, como posso te ajudar?</p>
+    </div>
+    <div class="options">
+      <button class="option">Auto Diagnóstico</button>
+      <button class="option">Histórico de manutenção</button>
+      <button class="option">Estimativa de custo</button>
+    </div>
+  </section>
+  <footer class="footer-container">
+    <form class="content-wrapper">
+        <label for="textInput" class="visually-hidden chat-window-message">Digite aqui</label>
+        <input id="textInput" class="chat-window-message" placeholder="Digite aqui" aria-label="Digite aqui" name="chat-window-message" type="text" autocomplete="off" autofocus/>
+        <button class="submit" type="submit"><i class="fab fa-telegram-plane"></i></button>
+    </form>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

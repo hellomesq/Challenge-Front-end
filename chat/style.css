@@ -5,6 +5,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --degrade: linear-gradient(
+        30deg,
+        #231838 0%,
+        #534274 13%,
+        #322846 27.5%,
+        #2e2541 43.5%,
+        #492d39 58.5%,
+        #653631 76%,
+        #9b4620 90%
+    );
+}
+
 header {
     background-color: #fff;
     box-shadow: 0 0 18.8px 0 #1a1f8f;
@@ -66,3 +79,190 @@ header {
     border: none;
     cursor: pointer;
     }
+
+.alinhar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    margin-top: 10%;
+}
+
+.message-container p{
+    font-size: 20px;
+    font-weight: normal;
+    word-wrap: break-word;
+    max-width: 100%; 
+}
+
+.card__btn {
+    background: linear-gradient(
+        90deg,
+        #0D16FF 16%,
+        #0A0D68 51%,
+        #0A080E 100%
+    );
+    box-shadow: -12px 10px 19px rgba(13, 22, 255, 0.51);
+    min-height: 50px;
+    max-width: 250px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    line-height: 3;
+    padding: 0 1.5em;
+    }    
+
+    .footer {
+        box-shadow: 0px -5px 11.2px 0px rgba(0, 0, 0, 0.25);
+        background-color: #100e0e;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.59);
+        font-weight: 600;
+        justify-content: center;
+        padding: 77px 60px;
+        margin-top: 10%;
+      }
+      .conteudo__footer {
+        display: flex;
+        margin-top: 4px;
+        width: 315px;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+      .conteudo__footer img {
+        object-fit: auto;
+        object-position: center;
+        width: 100%;
+      }
+      .integrantes__footer {
+        margin-top: 30px;
+       
+      }
+      .integrantes__footer a{
+        color: rgba(255, 255, 255, 0.514);
+        text-decoration: none;
+        font-weight: normal;
+      }
+
+
+/* SEGUNDA PÁGINA */
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 648px;
+    margin-left: 5%;
+    margin-top: 3%;
+    color: #000;
+  }
+  .message-section {
+    align-self: start;
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  }
+  .message-section img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: auto;
+    object-position: center;
+  }
+  .message {
+    border-radius: 16px;
+    background-color: rgba(134, 153, 171, 0.27);
+    border: none;
+    align-self: start;
+    margin-top: 5px;
+    justify-content: center;
+    padding: 10px 14px;
+  }
+  @media (max-width: 991px) {
+    .message {
+      padding-right: 20px;
+    }
+  }
+  .options {
+    align-self: center;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    justify-content: center; 
+    margin: 13px 0 0 32px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+.option {
+    border-radius: 16px;
+    background-color: rgba(134, 153, 171, 0.27);
+    justify-content: center;
+    padding: 10px 17px;
+    border: none;
+}
+
+.option:hover {
+    background-color: rgba(134, 153, 171, 0.637);
+}
+
+@media (max-width: 991px) {
+    .option:nth-of-type(2),
+    .option:nth-of-type(3) {
+        padding-right: 20px; 
+    }
+    .option {
+        padding: 10px 17px;
+    }
+}
+
+
+  .footer-container {
+    box-shadow: 0px -4px 18.8px 0px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.chat-window-message {
+    font-size: 20px;
+    background: none;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1133px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.submit{
+ font-size: 22px;
+ background-color: transparent;
+ border: none;
+}
