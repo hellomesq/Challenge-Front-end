@@ -44,16 +44,3 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
-
-//animação do forms
-const loginBtn = document.getElementById("login");
-const cadastroBtn = document.getElementById("cadastro");
-const container = document.querySelector(".container");
-
-loginBtn.addEventListener("click", () => {
-    container.classList.remove("ativar-painel");
-});
-
-cadastroBtn.addEventListener("click", () => {
-    container.classList.add("ativar-painel");
-});
